@@ -6,23 +6,17 @@ namespace Geometic_Shapes
     {
         static void Main(string[] args)
         {
-            var s1 = new Square()
-            {
-                Side1 = 5
-            };
-            var r1 = new Rect()
-            {
-                Side1 = 3, Side2 = 5
-            };
-            var q1 = new Quad()
-            {
-                Side1 = 3, Side2 = 4, Side3 = 5, Side4 =6
-            };
-            Console.WriteLine($"Perimeter for Quad is {q1.Perimeter()}");
-            Console.WriteLine($"Perimeter for Rect is {r1.Perimeter()}");
-            Console.WriteLine($"Area for Rect is {r1.Area()}");
-            Console.WriteLine($"Perimeter for Square is {s1.Perimeter()}");
-            Console.WriteLine($"Area for Square is {s1.Area()}");
+
+            var q1 = new Quad(5, 5, 5, 5);
+
+            var r1 = new Rect(3, 7);    //utalizing Capsulation
+
+            var s1 = new Square(5);
+            
+            
+            q1.Print();
+            r1.Print();
+            s1.Print();
 
         }
     }
